@@ -1,11 +1,10 @@
 import React, { useEffect } from 'react';
 
-const unnecessaryDep1 = '1'
-const unnecessaryDep2 = '2'
-const unnecessaryDep3 = '3'
-
 const MyComponent: React.JSX.Element = () => {
-    
+    const unnecessaryDep1 = '1'
+    const unnecessaryDep2 = '2'
+    const unnecessaryDep3 = '3'
+
     useEffect(() => {
         console.log('Component mounted');
     }, [unnecessaryDep1, unnecessaryDep2, unnecessaryDep3]);
